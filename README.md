@@ -1,8 +1,10 @@
 Digitalization - Pipelines to Platforms
 ================
 
-Rise of Digital Platforms Over The Last 10 Years
-================================================
+Rise of Digital Platforms Over 2009 to 2018
+===========================================
+
+Based on data in ![<https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization>](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization)
 
 ``` r
 mcs = read.csv("marketcapitalizations.csv")
@@ -15,6 +17,8 @@ Oil Barrons Stepped Down - Silicon Kids Moved Up
 |:---------------------------------------------------------------:|:--------------------------------------------------------:|:-----------------------------------------------------------:|
 | ![](./README_files/figure-markdown_github/companies-gafa-1.png) | ![](./README_files/figure-markdown_github/nations-1.png) | ![](./README_files/figure-markdown_github/industries-1.png) |
 
+Icons made by ![<https://www.flaticon.com/authors/freepik>](Freepik)
+
 ``` r
 library(ggplot2)
 library(png)
@@ -26,7 +30,10 @@ tenyearsafter<-function(years, ranks, names, folder) {
   ggplot() +
     labs(x = "Years", y = "Rank") +
     theme(
-      axis.text        = element_text(size = 8),
+      axis.text.x      = element_text(size = 40),
+      axis.text.y      = element_text(size = 40),
+      axis.title.x     = element_blank(),
+      axis.title.y     = element_blank(),
       axis.ticks       = element_blank(),
       panel.grid.major = element_blank(),
       panel.grid.minor = element_blank(),
@@ -34,11 +41,11 @@ tenyearsafter<-function(years, ranks, names, folder) {
     ) +
     
     scale_x_continuous(
-      limits = c(2007,2016),
-      breaks = seq(2007,2016,1)
+      limits = c(2008.5,2018.5),
+      breaks = seq(2009,2018,1)
     ) +
     scale_y_continuous(
-      limits = c(1,10),
+      limits = c(0.5,10.5),
       breaks = seq(1,10,1),
       labels = seq(10,1,-1)
     ) +

@@ -1,4 +1,26 @@
 Year, Rank, Company, Nation, Industry, Platform, Market Capitalization
+2018,1,Microsoft,United States,Information Technology,Innovation,780.5
+2018,2,Apple,United States,Information Technology,Integrated,748.7
+2018,3,Amazon,United States,Information Technology,Integrated,735.9
+2018,4,Alphabet,United States,Information Technology,Integrated,728.4
+2018,5,Berkshire Hathaway,United States,Conglomerate,,499.6
+2018,6,Facebook,United States,Information Technology,Integrated,375.9
+2018,7,Tencent,China,Information Technology,Integrated,375.1
+2018,8,Alibaba Group,China,Information Technology,Integrated,355.1
+2018,9,Johnson & Johnson,United States,Health Care,,346.1
+2018,10,JPMorgan Chase,United States,Finance,,324.7
+
+2017,1,Apple,United States,Information Technology,Integrated,868.9
+2017,2,Alphabet,United States,Information Technology,Integrated,727.0
+2017,3,Microsoft,United States,Information Technology,Innovation,659.9
+2017,4,Amazon,United States,Information Technology,Integrated,563.6
+2017,5,Berkshire Hathaway,United States,Conglomerate,,512.8
+2017,6,Exxon,United States,Oil and Gas,,493.3
+2017,7,Johnson & Johnson,United States,Health Care,,489.5
+2017,8,Facebook,United States,Information Technology,Integrated,440.7
+2017,9,JPMorgan Chase,United States,Finance,,375.4
+2017,10,Wells Fargo,United States,Finance,,371.1
+
 2016,1,Apple,United States,Information Technology,Integrated,617.6
 2016,2,Alphabet,United States,Information Technology,Integrated,532.0
 2016,3,Microsoft,United States,Information Technology,Innovation,483.2
@@ -86,25 +108,3 @@ Year, Rank, Company, Nation, Industry, Platform, Market Capitalization
 2009,8,HSBC,United Kingdom,Finance,,199.3
 2009,9,Petrobras,Brazil,Oil and Gas,,199.1
 2009,10,Apple,United States,Information Technology,Integrated,189.8
-
-2008,1,Exxon,United States,Oil and Gas,,406.1
-2008,2,Petro China,China,Oil and Gas,,259.8
-2008,3,Wal-Mart,United States,Retail,,219.9
-2008,4,China Mobile,Hong Kong,Telecommunications,,201.3
-2008,5,Procter & Gamble,United States,Consumer Goods,,184.6
-2008,6,ICBC,China,Finance,,173.9
-2008,7,Microsoft,United States,Information Technology,Innovation,172.9
-2008,8,AT&T,United States,Telecommunications,,168.0
-2008,9,Johnson & Johnson,United States,Health Care,,166.0
-2008,10,General Electric,United States,Conglomerate,,161.3
-
-2007,1,Petrochina,China,Oil and Gas,,724.0
-2007,2,Exxon,United States,Oil and Gas,,511.9
-2007,3,General Electric,United States,Conglomerate,,374.6
-2007,4,China Mobile,Hong Kong,Telecommunications,,354.1
-2007,5,ICBC,China,Finance,,339.0
-2007,6,Microsoft,United States,Information Technology,Innovation,333.1
-2007,7,Gazprom,Russia,Oil and Gas,,329.6
-2007,8,Royal Dutch Shell,The Netherlands,Oil and Gas,,269.5
-2007,9,AT&T,United States,Telecommunications,,252.1
-2007,10,Sinopec,China,Oil and Gas,,249.6
