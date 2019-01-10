@@ -4,7 +4,7 @@ Digitalization - Pipelines to Platforms
 Rise of Digital Platforms Over 2009 to 2018
 ===========================================
 
-Based on data in ![<https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization>](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization)
+Based on data in [List of public corporations by market capitalization @ Wikipedia](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization)
 
 ``` r
 mcs = read.csv("marketcapitalizations.csv")
@@ -17,7 +17,7 @@ Oil Barrons Stepped Down - Silicon Kids Moved Up
 |:---------------------------------------------------------------:|:--------------------------------------------------------:|:-----------------------------------------------------------:|
 | ![](./README_files/figure-markdown_github/companies-gafa-1.png) | ![](./README_files/figure-markdown_github/nations-1.png) | ![](./README_files/figure-markdown_github/industries-1.png) |
 
-Icons made by ![<https://www.flaticon.com/authors/freepik>](Freepik)
+Icons made by [Freepik](https://www.flaticon.com/authors/freepik)
 
 ``` r
 library(ggplot2)
@@ -30,8 +30,8 @@ tenyearsafter<-function(years, ranks, names, folder) {
   ggplot() +
     labs(x = "Years", y = "Rank") +
     theme(
-      axis.text.x      = element_text(size = 40),
-      axis.text.y      = element_text(size = 40),
+      axis.text.x      = element_text(size = 20),
+      axis.text.y      = element_text(size = 20),
       axis.title.x     = element_blank(),
       axis.title.y     = element_blank(),
       axis.ticks       = element_blank(),
