@@ -1,21 +1,20 @@
 Digitalization - Pipelines to Platforms
 ================
 
-Rise of Digital Platforms Over 2009 to 2018
-===========================================
+# Rise of Digital Platforms Over 2010 to 2019
 
-Based on data in [List of public corporations by market capitalization @ Wikipedia](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization)
+Based on data in [List of public corporations by market capitalization @
+Wikipedia](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization)
 
 ``` r
 mcs = read.csv("marketcapitalizations.csv")
 ```
 
-Oil Barrons Stepped Down - Silicon Kids Moved Up
-------------------------------------------------
+## Oil Barrons Stepped Down - Silicon Kids Moved Up
 
-|                            Companies                            |                          Nations                         |                          Industries                         |
-|:---------------------------------------------------------------:|:--------------------------------------------------------:|:-----------------------------------------------------------:|
-| ![](./README_files/figure-markdown_github/companies-gafa-1.png) | ![](./README_files/figure-markdown_github/nations-1.png) | ![](./README_files/figure-markdown_github/industries-1.png) |
+|                   Companies                    |                   Nations                    |                   Industries                    |
+| :--------------------------------------------: | :------------------------------------------: | :---------------------------------------------: |
+| ![](./README_files/figure-gfm/companies-1.png) | ![](./README_files/figure-gfm/nations-1.png) | ![](./README_files/figure-gfm/industries-1.png) |
 
 Icons made by [Freepik](https://www.flaticon.com/authors/freepik)
 
@@ -41,8 +40,8 @@ tenyearsafter<-function(years, ranks, names, folder) {
     ) +
     
     scale_x_continuous(
-      limits = c(2008.5,2018.5),
-      breaks = seq(2009,2018,1)
+      limits = c(2009.5,2019.5),
+      breaks = seq(2010,2019,1)
     ) +
     scale_y_continuous(
       limits = c(0.5,10.5),
@@ -64,10 +63,10 @@ tenyearsafter<-function(years, ranks, names, folder) {
 }
 ```
 
-Rise of Digital Platforms / Companies
-=====================================
+# Rise of Digital Platforms / Companies
 
-Top 10 publicly traded companies worldwide wrt market capitalization and shifts over the years 2007 - 2016.
+Top 10 publicly traded companies worldwide wrt market capitalization and
+shifts over the years 2010 - 2019.
 
 ``` r
 tenyearsafter(mcs$Year,
@@ -82,32 +81,110 @@ tenyearsafter(mcs$Year,
               "companies")
 ```
 
-![](README_files/figure-markdown_github/companies-1.png)
+![](README_files/figure-gfm/companies-1.png)<!-- -->
 
-Rise of Digital Platforms / Companies (GAFA)
-============================================
+**Nota Bene**: The wikipedia page cited above ranks **Saudi Aramco** at
+the first position for the fourth quarter of 2019 with a valuation of
+1,900,000 million USD. Apple is ranked at the second position with a
+valuation of 1,305,000 million USD.
 
-With the Google logo (instead of Alphabet) the GAFA effect becomes visible immediately.
+On the one hand, if you compare the 1,305,000 million USD valuation
+given on wikipedia with the 1,298,000 million USD you recognise that
+there might be slight variations by using different sources, formula, or
+days. But Saudi Aramco is different.
+
+There seem to be estimates of the owner Mohaamed bin Salman at 2,00,000
+million USD.
+
+More conservative estimates come to about 1,400,000 million USD, and
+Wood Mackenzie estimates the valuation of Aramco at only 500,000 million
+USD.
+
+[Article “Wie viel ist der Ölgigant Aramco wirklich wert?” in Frankfurt
+Allgemeinee
+Zeitung](https://www.faz.net/aktuell/finanzen/aktien/erdoel-gigant-saudi-aramco-plant-milliarden-boersengang-14989211-p2.html)
+
+# Rise of Digital Platforms / Companies (GAFA)
+
+With the Google logo (instead of Alphabet) the GAFA effect becomes
+visible immediately.
+
+|   |    |          |
+| -: | :-: | :------- |
+| G | \= | Google   |
+| A | \= | Apple    |
+| F | \= | Facebook |
+| A | \= | Amazon   |
 
 ``` r
-tenyearsafter(mcs$Year,
-              mcs$Rank,
+mcsgafa = mcs
+
+gafa_codes <- c("Amazon", "Apple", "Facebook", "Alphabet")
+
+levels(mcsgafa$Company) <- c(levels(mcsgafa$Company), "Blank")
+
+for (i in seq_along(mcsgafa$Company)) {
+  if (! (mcsgafa$Company[[i]] %in% gafa_codes))
+    mcsgafa$Company[[i]] <- "Blank"
+}
+
+tenyearsafter(mcsgafa$Year,
+              mcsgafa$Rank,
               mapply(function(cc)
                 gsub(" ", "",
                   gsub("&", "",
                     gsub("-", "",
                       gsub("alphabet", "google",
                         tolower(cc))))),
-                mcs$Company),
+                mcsgafa$Company),
               "companies")
 ```
 
-![](README_files/figure-markdown_github/companies-gafa-1.png)
+![](README_files/figure-gfm/companies-gafa-1.png)<!-- -->
 
-Rise of Digital Platforms / Industries
-======================================
+# Rise of Digital Platforms / Companies (GAFAM)
 
-In 2007 the Oil & Gas industry was represented by 5 companies among the top 10 in the ranking. In 2016 (end of year) the Information Technology industry took 5 positions among the top 10.
+The GAFAM effect with the rise of Microsoft impresses even more.
+
+|   |    |           |
+| -: | :-: | :-------- |
+| G | \= | Google    |
+| A | \= | Apple     |
+| F | \= | Facebook  |
+| A | \= | Amazon    |
+| M | \= | Microsoft |
+
+``` r
+mcsgafam = mcs
+
+gafam_codes <- c("Amazon", "Apple", "Facebook", "Alphabet", "Microsoft")
+
+levels(mcsgafam$Company) <- c(levels(mcsgafam$Company), "Blank")
+
+for (i in seq_along(mcsgafam$Company)) {
+  if (! (mcsgafam$Company[[i]] %in% gafam_codes))
+    mcsgafam$Company[[i]] <- "Blank"
+}
+
+tenyearsafter(mcsgafam$Year,
+              mcsgafam$Rank,
+              mapply(function(cc)
+                gsub(" ", "",
+                  gsub("&", "",
+                    gsub("-", "",
+                      gsub("alphabet", "google",
+                        tolower(cc))))),
+                mcsgafam$Company),
+              "companies")
+```
+
+![](README_files/figure-gfm/companies-gafam-1.png)<!-- -->
+
+# Rise of Digital Platforms / Industries
+
+In 2007 the Oil & Gas industry was represented by 5 companies among the
+top 10 in the ranking. In 2016 (end of year) the Information Technology
+industry took 5 positions among the top 10.
 
 ``` r
 tenyearsafter(mcs$Year,
@@ -120,12 +197,15 @@ tenyearsafter(mcs$Year,
               "industries")
 ```
 
-![](README_files/figure-markdown_github/industries-1.png)
+![](README_files/figure-gfm/industries-1.png)<!-- -->
 
-Rise of Digital Platforms / Nations
-===================================
+# Rise of Digital Platforms / Nations
 
-By the end of 2016 the United States alone take all 10 places in the ranking.
+By the end of 2016 the United States alone take all 10 places in the
+ranking.
+
+Meanwhile China holds two positions in the top 10 with the platform
+companies Alibaba und Tencent.
 
 ``` r
 tenyearsafter(mcs$Year,
@@ -137,4 +217,4 @@ tenyearsafter(mcs$Year,
               "nations")
 ```
 
-![](README_files/figure-markdown_github/nations-1.png)
+![](README_files/figure-gfm/nations-1.png)<!-- -->

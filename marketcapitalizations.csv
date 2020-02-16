@@ -1,4 +1,16 @@
-Year, Rank, Company, Nation, Industry, Platform, Market Capitalization
+Year,Rank,Company,Nation,Industry,Platform,Market Capitalization
+
+2019,1,Apple,United States,Information Technology,Integrated,1305
+2019,2,Microsoft,United States,Information Technology,Innovation,1203
+2019,3,Alphabet,United States,Information Technology,Integrated,922
+2019,4,Amazon,United States,Information Technology,Integrated,916
+2019,5,Facebook,United States,Information Technology,Integrated,585
+2019,6,Alibaba Group,China,Information Technology,Integrated,569
+2019,7,Berkshire Hathaway,United States,Conglomerate,,554
+2019,8,Tencent,China,Information Technology,Integrated,461
+2019,9,JPMorgan Chase,United States,Finance,,437
+2019,10,Visa,United States,Finance,,417
+
 2018,1,Microsoft,United States,Information Technology,Innovation,780.5
 2018,2,Apple,United States,Information Technology,Integrated,748.7
 2018,3,Amazon,United States,Information Technology,Integrated,735.9
@@ -97,14 +109,3 @@ Year, Rank, Company, Nation, Industry, Platform, Market Capitalization
 2010,8,China Construction Bank,China,Finance,,222.2
 2010,9,Shell,United Kingdom,Oil and Gas,,208.6
 2010,10,Nestlé,Switzerland,Food,,203.5
-
-2009,1,Petro China,China,Oil and Gas,,353.1
-2009,2,Exxon,United States,Oil and Gas,,323.7
-2009,3,Microsoft,United States,Information Technology,Innovation,270.6
-2009,4,ICBC,China,Finance,,269.0
-2009,5,Wal-Mart,United States,Retail,,203.7
-2009,6,China Construction Bank,China,Finance,,201.4
-2009,7,BP,United Kingdom,Oil and Gas,,201.2
-2009,8,HSBC,United Kingdom,Finance,,199.3
-2009,9,Petrobras,Brazil,Oil and Gas,,199.1
-2009,10,Apple,United States,Information Technology,Integrated,189.8
