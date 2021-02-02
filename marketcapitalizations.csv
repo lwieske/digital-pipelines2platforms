@@ -1,5 +1,16 @@
 Year,Rank,Company,Nation,Industry,Platform,Market Capitalization
 
+2020,1,Apple,United States,Information Technology,Integrated,2254
+2020,2,Microsoft,United States,Information Technology,Innovation,1682
+2020,3,Amazon,United States,Information Technology,Integrated,1634
+2020,4,Alphabet,United States,Information Technology,Integrated,1185
+2020,5,Facebook,United States,Information Technology,Integrated,777
+2020,6,Tencent,China,Information Technology,Integrated,683
+2020,7,Tesla,United States,Automotive,Innovation,668
+2020,8,Alibaba Group,China,Information Technology,Integrated,629
+2020,9,TSMC,China,Semiconductor,,565
+2020,10,Berkshire Hathaway,United States,Conglomerate,,545
+
 2019,1,Apple,United States,Information Technology,Integrated,1305
 2019,2,Microsoft,United States,Information Technology,Innovation,1203
 2019,3,Alphabet,United States,Information Technology,Integrated,922
@@ -98,14 +109,3 @@ Year,Rank,Company,Nation,Industry,Platform,Market Capitalization
 2011,8,Chevron,United States,Oil and Gas,,211.9
 2011,9,Wal-Mart,United States,Retail,,204.7
 2011,10,China Mobile,Hong Kong,Telecommunications,,196.1
-
-2010,1,Exxon,United States,Oil and Gas,,368.7
-2010,2,Petro China,China,Oil and Gas,,303.3
-2010,3,Apple,United States,Information Technology,Integrated,295.9
-2010,4,BP,United Kingdom,Oil and Gas,,243.5
-2010,5,Microsoft,United States,Information Technology,Innovation,238.8
-2010,6,ICBC,China,Finance,,233.4
-2010,7,Petrobras,Brazil,Oil and Gas,,229.1
-2010,8,China Construction Bank,China,Finance,,222.2
-2010,9,Shell,United Kingdom,Oil and Gas,,208.6
-2010,10,Nestlé,Switzerland,Food,,203.5

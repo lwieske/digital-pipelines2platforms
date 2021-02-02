@@ -1,7 +1,7 @@
 Digitalization - Pipelines to Platforms
 ================
 
-# Rise of Digital Platforms Over 2010 to 2019
+# Rise of Digital Platforms Over 2011 to 2020
 
 Based on data in [List of public corporations by market capitalization @
 Wikipedia](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization)
@@ -13,7 +13,7 @@ mcs = read.csv("marketcapitalizations.csv")
 ## Oil Barrons Stepped Down - Silicon Kids Moved Up
 
 |                   Companies                    |                   Nations                    |                   Industries                    |
-| :--------------------------------------------: | :------------------------------------------: | :---------------------------------------------: |
+|:----------------------------------------------:|:--------------------------------------------:|:-----------------------------------------------:|
 | ![](./README_files/figure-gfm/companies-1.png) | ![](./README_files/figure-gfm/nations-1.png) | ![](./README_files/figure-gfm/industries-1.png) |
 
 Icons made by [Freepik](https://www.flaticon.com/authors/freepik)
@@ -40,8 +40,8 @@ tenyearsafter<-function(years, ranks, names, folder) {
     ) +
     
     scale_x_continuous(
-      limits = c(2009.5,2019.5),
-      breaks = seq(2010,2019,1)
+      limits = c(2010.5,2020.5),
+      breaks = seq(2011,2020,1)
     ) +
     scale_y_continuous(
       limits = c(0.5,10.5),
@@ -109,12 +109,12 @@ Zeitung](https://www.faz.net/aktuell/finanzen/aktien/erdoel-gigant-saudi-aramco-
 With the Google logo (instead of Alphabet) the GAFA effect becomes
 visible immediately.
 
-|   |    |          |
-| -: | :-: | :------- |
-| G | \= | Google   |
-| A | \= | Apple    |
-| F | \= | Facebook |
-| A | \= | Amazon   |
+|     |     |          |
+|----:|:---:|:---------|
+|   G |  =  | Google   |
+|   A |  =  | Apple    |
+|   F |  =  | Facebook |
+|   A |  =  | Amazon   |
 
 ``` r
 mcsgafa = mcs
@@ -146,13 +146,13 @@ tenyearsafter(mcsgafa$Year,
 
 The GAFAM effect with the rise of Microsoft impresses even more.
 
-|   |    |           |
-| -: | :-: | :-------- |
-| G | \= | Google    |
-| A | \= | Apple     |
-| F | \= | Facebook  |
-| A | \= | Amazon    |
-| M | \= | Microsoft |
+|     |     |           |
+|----:|:---:|:----------|
+|   G |  =  | Google    |
+|   A |  =  | Apple     |
+|   F |  =  | Facebook  |
+|   A |  =  | Amazon    |
+|   M |  =  | Microsoft |
 
 ``` r
 mcsgafam = mcs
