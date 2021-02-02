@@ -66,7 +66,7 @@ tenyearsafter<-function(years, ranks, names, folder) {
 # Rise of Digital Platforms / Companies
 
 Top 10 publicly traded companies worldwide wrt market capitalization and
-shifts over the years 2010 - 2019.
+shifts over the years 2011 - 2020.
 
 ``` r
 tenyearsafter(mcs$Year,
@@ -183,8 +183,8 @@ tenyearsafter(mcsgafam$Year,
 # Rise of Digital Platforms / Industries
 
 In 2007 the Oil & Gas industry was represented by 5 companies among the
-top 10 in the ranking. In 2016 (end of year) the Information Technology
-industry took 5 positions among the top 10.
+top 10 in the ranking. In 2020 (end of year) the Information Technology
+industry takes 7 positions among the top 10.
 
 ``` r
 tenyearsafter(mcs$Year,
@@ -201,11 +201,11 @@ tenyearsafter(mcs$Year,
 
 # Rise of Digital Platforms / Nations
 
-By the end of 2016 the United States alone take all 10 places in the
-ranking.
+By the end of 2020 the United States alone take 7 places in the ranking.
 
-Meanwhile China holds two positions in the top 10 with the platform
-companies Alibaba und Tencent.
+Meanwhile China holds three positions in the top 10 with the platform
+companies Alibaba und Tencent as well as TSMC (Taiwan Semiconductor
+Manufacturing Company).
 
 ``` r
 tenyearsafter(mcs$Year,

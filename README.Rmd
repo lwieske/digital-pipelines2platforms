@@ -74,7 +74,7 @@ tenyearsafter<-function(years, ranks, names, folder) {
 # Rise of Digital Platforms / Companies
 
 Top 10 publicly traded companies worldwide wrt market
-capitalization and shifts over the years 2010 - 2019.
+capitalization and shifts over the years 2011 - 2020.
 
 ```{r companies}
 
