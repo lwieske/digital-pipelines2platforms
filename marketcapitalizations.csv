@@ -1,5 +1,16 @@
 Year,Rank,Company,Nation,Industry,Platform,Market Capitalization
 
+2021,1,Apple,United States,Information Technology,Integrated,2913
+2021,2,Microsoft,United States,Information Technology,Innovation,2525
+2021,3,Alphabet,United States,Information Technology,Integrated,1922
+2021,4,Amazon,United States,Information Technology,Integrated,1691
+2021,5,Tesla,United States,Automotive,Innovation,1061
+2021,6,Meta,United States,Information Technology,Integrated,935
+2021,7,Nvidia,United States,Information Technology,Innovation,732
+2021,8,Berkshire Hathaway,United States,Conglomerate,,668
+2021,9,TSMC,China,Information Technology,Innovation,623
+2021,10,Tencent,China,Information Technology,Integrated,559
+
 2020,1,Apple,United States,Information Technology,Integrated,2254
 2020,2,Microsoft,United States,Information Technology,Innovation,1682
 2020,3,Amazon,United States,Information Technology,Integrated,1634
@@ -8,7 +19,7 @@ Year,Rank,Company,Nation,Industry,Platform,Market Capitalization
 2020,6,Tencent,China,Information Technology,Integrated,683
 2020,7,Tesla,United States,Automotive,Innovation,668
 2020,8,Alibaba Group,China,Information Technology,Integrated,629
-2020,9,TSMC,China,Semiconductor,,565
+2020,9,TSMC,China,Information Technology,,565
 2020,10,Berkshire Hathaway,United States,Conglomerate,,545
 
 2019,1,Apple,United States,Information Technology,Integrated,1305
@@ -98,14 +109,3 @@ Year,Rank,Company,Nation,Industry,Platform,Market Capitalization
 2012,8,Samsung,South Korea,Information Technology,,227.6
 2012,9,Microsoft,United States,Information Technology,Innovation,224.8
 2012,10,Shell,United Kingdom,Oil and Gas,,222.7
-
-2011,1,Exxon,United States,Oil and Gas,,406.3
-2011,2,Apple,United States,Information Technology,Integrated,376.4
-2011,3,Petro China,China,Oil and Gas,,276.8
-2011,4,Shell,United Kingdom,Oil and Gas,,236.7
-2011,5,ICBC,China,Finance,,228.2
-2011,6,Microsoft,United States,Information Technology,Innovation,218.4
-2011,7,IBM,United States,Information Technology,,216.7
-2011,8,Chevron,United States,Oil and Gas,,211.9
-2011,9,Wal-Mart,United States,Retail,,204.7
-2011,10,China Mobile,Hong Kong,Telecommunications,,196.1

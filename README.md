@@ -1,7 +1,7 @@
 Digitalization - Pipelines to Platforms
 ================
 
-# Rise of Digital Platforms Over 2011 to 2020
+# Rise of Digital Platforms Over 2012 to 2021
 
 Based on data in [List of public corporations by market capitalization @
 Wikipedia](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization)
@@ -40,8 +40,8 @@ tenyearsafter<-function(years, ranks, names, folder) {
     ) +
     
     scale_x_continuous(
-      limits = c(2010.5,2020.5),
-      breaks = seq(2011,2020,1)
+      limits = c(2011.5,2021.5),
+      breaks = seq(2012,2021,1)
     ) +
     scale_y_continuous(
       limits = c(0.5,10.5),
@@ -66,7 +66,7 @@ tenyearsafter<-function(years, ranks, names, folder) {
 # Rise of Digital Platforms / Companies
 
 Top 10 publicly traded companies worldwide wrt market capitalization and
-shifts over the years 2011 - 2020.
+shifts over the years 2012 - 2021.
 
 ``` r
 tenyearsafter(mcs$Year,
@@ -106,8 +106,8 @@ Zeitung](https://www.faz.net/aktuell/finanzen/aktien/erdoel-gigant-saudi-aramco-
 
 # Rise of Digital Platforms / Companies (GAFA)
 
-With the Google logo (instead of Alphabet) the GAFA effect becomes
-visible immediately.
+With the Google logo (instead of Alphabet) and the Facebook logo
+(instead of the Meta logo), the GAFA effect becomes visible immediately.
 
 |     |     |          |
 |----:|:---:|:---------|
@@ -119,7 +119,7 @@ visible immediately.
 ``` r
 mcsgafa = mcs
 
-gafa_codes <- c("Amazon", "Apple", "Facebook", "Alphabet")
+gafa_codes <- c("Amazon", "Apple", "Facebook", "Alphabet", "Meta")
 
 levels(mcsgafa$Company) <- c(levels(mcsgafa$Company), "Blank")
 
@@ -135,7 +135,8 @@ tenyearsafter(mcsgafa$Year,
                   gsub("&", "",
                     gsub("-", "",
                       gsub("alphabet", "google",
-                        tolower(cc))))),
+                        gsub("meta", "facebook",
+                          tolower(cc)))))),
                 mcsgafa$Company),
               "companies")
 ```
@@ -157,7 +158,7 @@ The GAFAM effect with the rise of Microsoft impresses even more.
 ``` r
 mcsgafam = mcs
 
-gafam_codes <- c("Amazon", "Apple", "Facebook", "Alphabet", "Microsoft")
+gafam_codes <- c("Amazon", "Apple", "Facebook", "Alphabet", "Microsoft", "Meta")
 
 levels(mcsgafam$Company) <- c(levels(mcsgafam$Company), "Blank")
 
@@ -173,7 +174,8 @@ tenyearsafter(mcsgafam$Year,
                   gsub("&", "",
                     gsub("-", "",
                       gsub("alphabet", "google",
-                        tolower(cc))))),
+                        gsub("meta", "facebook",
+                          tolower(cc)))))),
                 mcsgafam$Company),
               "companies")
 ```
@@ -183,8 +185,8 @@ tenyearsafter(mcsgafam$Year,
 # Rise of Digital Platforms / Industries
 
 In 2007 the Oil & Gas industry was represented by 5 companies among the
-top 10 in the ranking. In 2020 (end of year) the Information Technology
-industry takes 7 positions among the top 10.
+top 10 in the ranking. In 2021 (end of year) the Information Technology
+industry takes 8 positions among the top 10.
 
 ``` r
 tenyearsafter(mcs$Year,
@@ -201,18 +203,18 @@ tenyearsafter(mcs$Year,
 
 # Rise of Digital Platforms / Nations
 
-By the end of 2020 the United States alone take 7 places in the ranking.
+By the end of 2021 the United States alone take the first eight places
+in the ranking.
 
-Meanwhile China holds three positions in the top 10 with the platform
-companies Alibaba und Tencent as well as TSMC (Taiwan Semiconductor
-Manufacturing Company).
+Meanwhile China holds two positions in the top 10 with the platform
+companies Tencent and TSMC (Taiwan Semiconductor Manufacturing Company).
 
 ``` r
 tenyearsafter(mcs$Year,
               mcs$Rank,
               mapply(function(nn)
                 gsub(" ", "",
-                      tolower(nn)),
+                  tolower(nn)),
                 mcs$Nation),
               "nations")
 ```
