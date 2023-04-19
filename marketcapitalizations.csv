@@ -19,7 +19,7 @@ Year,Rank,Company,Nation,Industry,Platform,Market Capitalization
 2021,6,Meta,United States,Information Technology,Integrated,935
 2021,7,Nvidia,United States,Information Technology,Innovation,732
 2021,8,Berkshire Hathaway,United States,Conglomerate,,668
-2021,9,TSMC,China,Information Technology,Innovation,623
+2021,9,TSMC,Taiwan,Information Technology,Innovation,623
 2021,10,Tencent,China,Information Technology,Integrated,559
 
 2020,1,Apple,United States,Information Technology,Integrated,2254
@@ -30,7 +30,7 @@ Year,Rank,Company,Nation,Industry,Platform,Market Capitalization
 2020,6,Tencent,China,Information Technology,Integrated,683
 2020,7,Tesla,United States,Automotive,Innovation,668
 2020,8,Alibaba Group,China,Information Technology,Integrated,629
-2020,9,TSMC,China,Information Technology,,565
+2020,9,TSMC,Taiwan,Information Technology,,565
 2020,10,Berkshire Hathaway,United States,Conglomerate,,545
 
 2019,1,Apple,United States,Information Technology,Integrated,1305
