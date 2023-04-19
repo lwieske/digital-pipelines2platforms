@@ -10,7 +10,7 @@ knitr::opts_chunk$set(
   fig.height = 10)
 ```
 
-# Rise of Digital Platforms Over 2012 to 2021
+# Rise of Digital Platforms Over 2013 to 2022
 
 Based on data in [List of public corporations by market capitalization @ Wikipedia](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization)
 
@@ -48,8 +48,8 @@ tenyearsafter<-function(years, ranks, names, folder) {
     ) +
     
     scale_x_continuous(
-      limits = c(2011.5,2021.5),
-      breaks = seq(2012,2021,1)
+      limits = c(2012.5,2022.5),
+      breaks = seq(2013,2022,1)
     ) +
     scale_y_continuous(
       limits = c(0.5,10.5),
@@ -74,7 +74,7 @@ tenyearsafter<-function(years, ranks, names, folder) {
 # Rise of Digital Platforms / Companies
 
 Top 10 publicly traded companies worldwide wrt market
-capitalization and shifts over the years 2012 - 2021.
+capitalization and shifts over the years 2013 - 2022.
 
 ```{r companies}
 
@@ -185,8 +185,8 @@ tenyearsafter(mcsgafam$Year,
 # Rise of Digital Platforms / Industries
 
 In 2007 the Oil & Gas industry was represented by 5 companies among the top 10
-in the ranking. In 2021 (end of year) the Information Technology industry takes 8
-positions among the top 10.
+in the ranking. In 2022 (end of year) the Information Technology industry takes
+5 positions among the top 10.
 
 ```{r industries}
 
@@ -203,10 +203,11 @@ tenyearsafter(mcs$Year,
 
 # Rise of Digital Platforms / Nations
 
-By the end of 2021 the United States alone take the first eight places in the ranking.
+By the end of 2022 the United States alone take the first nine places in the
+ranking.
 
-Meanwhile China holds two positions in the top 10 with the platform companies
-Tencent and TSMC (Taiwan Semiconductor Manufacturing Company).
+Meanwhile China holds one positions in the top 10 with the platform company
+Tencent.
 
 ```{r nations}
 
